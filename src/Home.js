@@ -1,16 +1,18 @@
-import { useState } from "react";
+
 import BlogList from "./BlogList";
 
 const Home = () => {
-  const [blogs, setBlogs] = useState([
+  const blogs = [
     { title: 'My new React', body: 'lorem ipsum...', author: 'gen16', id: 1 },
-    { title: 'Welcome JavaScript!', body: 'lorem ipsum...', author: 'gen27', id: 2 },
-    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'gen28', id: 3 }
-  ])
+    { title: 'Welcome Java!', body: 'lorem ipsum...', author: 'gen27', id: 2 },
+    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'gen28', id: 3 },
+    { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'gen29', id: 4 }
+  ];
+  
 
   return (
     <div className="home">
-      <BlogList blogs={blogs} title="All Blogs" />
+      <BlogList joe={blogs} title="All Blogs" />
     </div>
   );
 }
