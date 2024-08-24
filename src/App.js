@@ -1,6 +1,10 @@
 import Navbar from "./Navbar"
 
 import Home from "./Home"
+import New from "./new"
+import Counter from "./counter"
+
+
 
 function App() {
 
@@ -8,11 +12,16 @@ function App() {
   return (
     <div className="App">
      <div className='content'>
-            <Navbar />
-            <Home />
-      <h1>App component</h1>
+      <div >
+      <h1 className="text-center font-bold text-4xl">App component</h1> 
+            {/* <Navbar />
+            <Home /> */}
+          <New />
+          <Counter />
+          
     
       {/* <h1>{title}</h1> */}
+      </div>
      </div>
     </div>
   )
