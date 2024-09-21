@@ -6,12 +6,11 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { useState } from "react";
-
-
- 
-
+import { v4 as uuid } from "uuid";
 
  
+
+
 function UserForms(props) {
 
   const [name, setName] = useState('');
@@ -34,7 +33,7 @@ function UserForms(props) {
     let newestUser = {
       name: name,
       email: email,
-      id: 1
+      id: uuid(),
 
       };
       

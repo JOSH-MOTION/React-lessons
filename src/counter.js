@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(2);
 
   // Event handler functions
   const handleIncrease = () => {
-    setCount(count + 1);
+    setCount(count + 10);
   };
 
   const handleDecrease = () => {

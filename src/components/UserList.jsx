@@ -7,14 +7,12 @@ function UserList({upDate}) {
         <h1>Userlist</h1>
 {upDate.map((upcase) => {
     return (
-        <div key={upcase.id}>
-            <h1>{upcase.name}</h1>
-            <h1>{upcase.email}</h1>
-        </div>
+        
+        <UserItem  key={upcase.id} newPeople={upcase} />
     );
 })}
 
-        <UserItem />
+    
         
         </div>
     
